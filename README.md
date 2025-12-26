@@ -1,31 +1,25 @@
-# Simple clicker app
+## Simple web service ##
 
-# Installation
+This application is used for many of the exercises in https://devopswithdocker.com as an application which students can use to test out different features of containers.
 
-Make sure you have a JavaScript runtime such as node installed.
+These include the following. Bolded is the feature of the app and after it the learning experience:
 
-## Prerequisites
+**App accepts arguments**
 
-Install ruby version 3.1.0.
+CMD
+docker run XXX command
 
-Install the correct version of bundler with `gem install bundler:2.3.3`
+**App generates content to a file**
 
-Run `bundle install` to install all dependencies specified in the Gemfile
+docker exec
+docker cp
+volumes
 
-## For development version
+**App starts a web server**
 
-Run migrations with `rails db:migrate`
+docker run -p
+volumes 
 
-Run `rails s` to start the project in development mode
+**App accepts PORT env and respects it**
 
-## For production version
-
-Run migrations with `rails db:migrate RAILS_ENV=production`
-
-Precompile your assets with `rake assets:precompile`
-
-Run `rails s -e production` to start the project in production mode
-
-(To get error output use `RAILS_LOG_TO_STDOUT=true rails s -e production`)
-
-### The application by default runs in port 3000
+heroku deploy
